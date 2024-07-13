@@ -1,0 +1,201 @@
+/* Normalize.css by necolas on github
+https://github.com/necolas/normalize.css */
+
+@import url(./normalize.css);
+
+
+
+
+/* main grid */
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 4fr;
+}
+
+.menu {
+    grid-row: 1/5;
+    background: #fcd581;
+
+    display: grid;
+    padding: 5px;
+    
+}
+
+.header {
+    grid-column: 2/4;
+}
+
+.user-info {
+    grid-column: 2/4;
+}
+
+.videos {
+    background: red;
+    grid-row: 3/5;
+}
+
+.announcements {
+    background: grey;
+}
+
+.list {
+    background: lightblue;
+}
+
+
+/* Left menu css */
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0em 0.5em;
+}
+
+.logo {
+    padding: 0.5em 0.5em 1em 0.25em;
+    font-size: 2em;
+    color: #c23742;
+    
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.menu-content {
+    display: grid;
+    grid-auto-rows: 1fr;
+    width: 100%;
+}
+
+.menu-content > div {
+    padding: 0.25em;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #c23742;
+
+    display: flex;
+    align-items: center;
+}
+
+.menu-content > div:hover {
+    text-decoration: underline;
+    box-shadow: #c23742 0px 0px 4px 1px;
+}
+.menu-content .empty-space:hover {
+    box-shadow: none;
+    cursor: default;
+}
+
+.menu-content img {
+    margin-right: 0.5em;
+    height: 1em;
+    width: auto;
+}
+
+/* Header CSS */
+
+.header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 8fr 1fr 1fr 3fr;
+}
+
+.header > label {
+    padding-right: 0.75em;
+    justify-self: flex-end;
+}
+
+.search-logo {
+    height: 1.5em;
+    opacity: 0.6;
+}
+
+.search-bar {
+    width: 80%;
+    border-radius: 1em;
+    border: none;
+    background-color: lightgray;
+    margin-bottom: 2px;
+    padding: 3px 10px;
+    justify-self: flex-start;
+}
+
+.search-bar:hover {
+    cursor: pointer;
+}
+
+.search-bar:focus {
+    outline: none;
+    box-shadow: gray 1px 1px 1px 1px;
+}
+
+.bell-icon > img {
+    height: 1.75em;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.pfp {
+    justify-self: end;
+}
+
+.pfp > img {
+    border-radius: 50%;
+    height: 35px;
+}
+
+.username {
+    font-size: 25px;
+    justify-self: center;
+}
+
+/* User info bar CSS */
+
+.user-info {
+    padding: 1em 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+}
+
+.user-info img {
+    height: 60px;
+}
+
+.welcome-text {
+    padding: 0em 1em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.upper-text {
+    align-self: center;
+    font-size: 1.2em;
+}
+
+.lower-text {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.user-info > button {
+    width: 80%;
+    height: 60%;
+
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border-radius: 1.5em;
+    border: none;
+    
+    align-self: center;
+    justify-self: flex-start;
+}
